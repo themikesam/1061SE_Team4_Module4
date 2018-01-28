@@ -55,11 +55,6 @@ if(strcmp($op,'mod')==0)
 		    if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) 
 		    {
 		        //echo "圖片上傳成功";
-		    } 
-		    else 
-		    {
-		        //echo "圖片尚未上傳，請再試一次";
-		        $upload_check = false;
 		    }
 		} 
 		else
