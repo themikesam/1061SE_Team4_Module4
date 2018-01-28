@@ -55,13 +55,14 @@ if(strcmp($op,'mod')==0)
 		    if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) 
 		    {
 		        //echo "圖片上傳成功";
-		    }
+		        $image = $target_dir.basename( $_FILES["image"]["name"]);
+		    } 
 		} 
 		else
 		{
 		    //echo "請再試一次";
+		    $image = "";
 		}
-		$image = $target_dir.basename( $_FILES["image"]["name"]);
 	}
 	else
 	{
@@ -141,13 +142,14 @@ else if(strcmp($op,'add')==0)
 		    if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) 
 		    {
 		        //echo "圖片上傳成功";
-		    } 
+		        $image = $target_dir.basename( $_FILES["image"]["name"]);
+		    }
 		} 
 		else
 		{
 		    //echo "請再試一次";
+		    $image = "";
 		}
-		$image = $target_dir.basename( $_FILES["image"]["name"]);
 	}
 	else
 	{
