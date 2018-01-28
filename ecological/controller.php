@@ -142,11 +142,6 @@ else if(strcmp($op,'add')==0)
 		    {
 		        //echo "圖片上傳成功";
 		    } 
-		    else 
-		    {
-		        //echo "圖片尚未上傳，請再試一次";
-		        $upload_check = false;
-		    }
 		} 
 		else
 		{
